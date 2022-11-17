@@ -1,0 +1,18 @@
+{
+    "name": "dikiwidia/fp-solution",
+    "description": "Laravel package for get data from Fingerprint Solution",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dikiwidia\\FpSolution\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Moch Diki Widianto",
+            "email": "dikiwidia@live.com"
+        }
+    ],
+    "require": {}
+}
