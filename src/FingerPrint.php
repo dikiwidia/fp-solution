@@ -248,6 +248,16 @@ class FingerPrint
         }
     }
 
+    public function isOnlineDevice($timeout = 1)
+    {
+        $handler = curl_init($this->ipAddress);
+        curl_setopt_array($handler, [ CURLOPT_TIMEOUT => $timeout, CURLOPT_RETURNTRANSFER => true ]);
+        $response = curl_exec($handler);
+        curl_close($handler);
+
+        return (boolean)$response;
+    }
+    
     /**
      * parse data funtion
      */
